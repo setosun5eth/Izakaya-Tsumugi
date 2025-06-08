@@ -1,0 +1,308 @@
+body {
+  font-family: 'Noto Serif JP', '游明朝', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #DEB887; /* 全体背景：統一感あるベージュ */
+  color: #4a3f30; /* 焦げ茶色 */
+  line-height: 1.8;
+}
+
+header {
+  background-color: #CD853F; /* ヘッダー：少し濃いオレンジ */
+  color: #fff;
+  padding: 0.5rem 0;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e5c68a;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('/Images/top.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); /* 背景に黒フィルター */
+}
+
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: '游明朝', 'Noto Serif JP', serif;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.about-text p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  word-break: break-word;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section, .osake-section {
+  background-color: #DEB887; /* 統一感あるベージュ */
+  padding: 3rem 1rem;
+}
+
+.menu-grid, .osake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-card, .osake-card {
+  background-color: #fff8f0;
+  border: 1px solid #e0dcd5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.menu-card img, .osake-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu-card h4, .osake-card h4 {
+  font-size: 1.4rem;
+  margin: 1rem 1rem 0.5rem;
+  font-family: 'Noto Serif JP', '游明朝', serif;
+  color: #4a3f30;
+}
+
+.menu-card p, .osake-card p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1.5rem;
+  line-height: 1.6;
+  color: #4a3f30;
+}
+
+.menu-card:hover, .osake-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+}
+
+.reservation {
+  background-color: #eee7dc;
+  color: #4a3f30;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.reservation-box {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background-color: #f8f5f0;
+  border: 1px solid #e0dcd5;
+  border-radius: 8px;
+}
+
+.reservation-btn {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #4a3f30;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #c49b2e;
+  transform: translateY(-2px);
+}
+
+.phone-contact p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.phone-number {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phone-icon {
+  font-size: 2.5rem;
+  color: #d4af37;
+}
+
+.reservation-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #CD853F;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+  }
+}
