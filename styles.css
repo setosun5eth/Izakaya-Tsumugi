@@ -2,13 +2,13 @@ body {
   font-family: 'Noto Serif JP', '游明朝', serif;
   margin: 0;
   padding: 0;
-  background-color: #DEB887; /* 全体背景：統一感あるベージュ */
-  color: #4a3f30; /* 焦げ茶色 */
+  background-color: #DEB887;
+  color: #4a3f30;
   line-height: 1.8;
 }
 
 header {
-  background-color: #CD853F; /* ヘッダー：少し濃いオレンジ */
+  background-color: #CD853F;
   color: #fff;
   padding: 0.5rem 0;
   top: 0;
@@ -66,9 +66,8 @@ nav a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4); /* 背景に黒フィルター */
+  background: rgba(0, 0, 0, 0.4);
 }
-
 
 .hero-text {
   position: relative;
@@ -76,11 +75,12 @@ nav a:hover {
 }
 
 .hero-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
   border-radius: 8px;
+  font-family: 'Noto Serif JP', '游明朝', serif;
   display: inline-block;
   line-height: 1.6;
 }
@@ -134,7 +134,7 @@ h3 {
 }
 
 .menu-section, .osake-section {
-  background-color: #DEB887; /* 統一感あるベージュ */
+  background-color: #DEB887;
   padding: 3rem 1rem;
 }
 
